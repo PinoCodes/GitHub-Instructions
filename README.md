@@ -30,7 +30,21 @@ If you’d like to work in a separate branch, create and switch to it:
 ### 5. Add and Commit Changes
 After making changes, add the files and create a commit:
 
-`git add .
-git commit -m "Description of changes"`
+`git add .`
+`git commit -m "Description of changes"`
 
-### 6. 
+### 6. Push Changes to GitHub
+
+To push changes to your GitHub repository, run:
+`git push origin branch_name`
+If you’re working on main, replace branch_name with main.
+
+## Connecting to GitHub via SSH
+
+To securely connect to GitHub, you can use SSH keys. Follow these steps to set it up:
+
+1. **Check for existing SSH keys**:  
+   Open your terminal and enter the following command:
+   ```bash
+   ls -al ~/.ssh
+This will display a list of files in the .ssh directory. Look for files named id_rsa and id_rsa.pub. If these files exist, you already have SSH keys generated.
