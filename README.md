@@ -17,3 +17,18 @@ In the terminal, use the following command to clone the repository and create a 
 
 **Example**: git clone git@github.com:PinoCodes/ML-Labs.git
 
+### 3. Navigate to the Project Folder
+
+Once cloned, navigate to the project directory:
+`cd repository_name`
+
+### 4. Create a New Branch
+
+If you’d like to work in a separate branch, create and switch to it:
+`git checkout -b branch_name`
+
+### 5. Add and Commit Changes
+After making changes, add the files and create a commit:
+```bash
+git add .
+git commit -m "Description of changes"
