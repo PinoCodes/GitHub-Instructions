@@ -12,8 +12,8 @@ This guide will help you open the terminal, connect to a GitHub repository, and 
 
 In the terminal, use the following command to clone the repository and create a local copy:
 
-```bash
+
 git clone git@github.com:your_account/repository_name.git
-'''
+
 **Example**: git clone git@github.com:PinoCodes/ML-Labs.git
 
