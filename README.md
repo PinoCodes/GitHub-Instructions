@@ -6,4 +6,11 @@ This guide will help you open the terminal, connect to a GitHub repository, and 
 ### 1. Open the Terminal
 
 - **On macOS**: Press `Command + Space`, type **Terminal**.
-- **On Windows**: Press `Win + R`, type **cmd** or **PowerShell**.
+- **On Windows**: Press `Win + R`, type **cmd** or **PowerShell**.(you can also download Git Bush, it may be easier to use)
+
+### 2. Clone the Repository
+
+In the terminal, use the following command to clone the repository and create a local copy:
+
+```bash
+git clone git@github.com:your_account/repository_name.git
