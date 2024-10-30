@@ -15,5 +15,5 @@ In the terminal, use the following command to clone the repository and create a 
 ```bash
 git clone git@github.com:your_account/repository_name.git
 
-**Examplep:** git clone git@github.com:PinoCodes/ML-Labs.git
+**Example**: git clone git@github.com:PinoCodes/ML-Labs.git
 
