@@ -29,9 +29,10 @@ If you’d like to work in a separate branch, create and switch to it:
 
 ### 5. Add and Commit Changes
 After making changes, add the files and create a commit:
- ```bash
- git add .
- git commit -m "Description of changes"
+ 
+ `git add .`
+ 
+ `git commit -m "Description of changes"`
 
 ### 6. Push Changes to GitHub
 
@@ -43,8 +44,11 @@ If you’re working on main, replace branch_name with main.
 
 To securely connect to GitHub, you can use SSH keys. Follow these steps to set it up:
 
-1. **Check for existing SSH keys**:  
+### 1. **Check for existing SSH keys**:  
    Open your terminal and enter the following command:
-   ```bash
-   ls -al ~/.ssh
+
+   `ls -al ~/.ssh`
 This will display a list of files in the .ssh directory. Look for files named id_rsa and id_rsa.pub. If these files exist, you already have SSH keys generated.
+
+### 2.	Generate a new SSH key (if you don’t have one):
+If you don’t have SSH keys, you can generate a new one with the following command. Make sure to replace <your_email@example.com> with your GitHub email address:
