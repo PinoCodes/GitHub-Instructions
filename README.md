@@ -48,7 +48,37 @@ To securely connect to GitHub, you can use SSH keys. Follow these steps to set i
    Open your terminal and enter the following command:
 
    `ls -al ~/.ssh`
+   
 This will display a list of files in the .ssh directory. Look for files named id_rsa and id_rsa.pub. If these files exist, you already have SSH keys generated.
 
 ### 2.	Generate a new SSH key (if you don’t have one):
 If you don’t have SSH keys, you can generate a new one with the following command. Make sure to replace <your_email@example.com> with your GitHub email address:
+
+`ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"`
+
+### 3.	Add your SSH key to the SSH agent:
+
+`eval "$(ssh-agent -s)"`
+
+Then add your SSH private key to the agent:
+
+`ssh-add ~/.ssh/id_rsa`
+
+### 4. Copy your SSH public key to your clipboard:
+
+Use the following command to copy your SSH key:
+
+`pbcopy < ~/.ssh/id_rsa.pub`
+
+### 5. Add your SSH key to your GitHub account:
+
+	•	Go to your GitHub account settings.
+	•	Navigate to “SSH and GPG keys”.
+	•	Click on “New SSH key”.
+	•	Paste your SSH key into the “Key” field and give it a title, then click “Add SSH key”.
+
+### 6. Test your SSH connection:
+
+To confirm that your setup is correct, run:
+
+`ssh -T git@github.com`
