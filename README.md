@@ -29,6 +29,8 @@ If you’d like to work in a separate branch, create and switch to it:
 
 ### 5. Add and Commit Changes
 After making changes, add the files and create a commit:
-```bash
-git add .
-git commit -m "Description of changes"
+
+`git add .
+git commit -m "Description of changes"`
+
+### 6. 
